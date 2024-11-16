@@ -1,4 +1,4 @@
-module com.example.javafx2l {
+module org.example.javafx2l {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,7 +10,8 @@ module com.example.javafx2l {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires static lombok;
 
-    opens com.example.javafx2l to javafx.fxml;
-    exports com.example.javafx2l;
+    opens org.example.javafx2l to javafx.fxml;
+    exports org.example.javafx2l;
 }
